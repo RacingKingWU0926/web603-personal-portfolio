@@ -1,11 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css'; // This is assuming you're not importing it elsewhere globally
+import './App.css'; // Make sure the path is correct based on your folder structure
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fas } from '@fortawesome/free-solid-svg-icons';
-library.add(fas);
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './components/About';
 import SayHi from './components/SayHi';
 import Portfolio from './components/Portfolio';
@@ -17,12 +14,12 @@ function App() {
     <Router>
       <div>
         <NavbarComponent />
-        <Switch>
-          <Route path="/about/" component={About} />
-          <Route path="/say-hi/" component={SayHi} />
-          <Route path="/#portfolio" component={Portfolio} />
-          <Route exact path="/" component={About} />
-        </Switch>
+        <Routes>
+          <Route path="/about/" element={<About />} />
+          <Route path="/say-hi/" element={<SayHi />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/" element={<About />} />
+        </Routes>
         <FooterComponent />
       </div>
     </Router>

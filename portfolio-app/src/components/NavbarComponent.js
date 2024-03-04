@@ -7,7 +7,7 @@ const NavbarComponent = () => (
     <NavbarBrand href="/">Jason Lei</NavbarBrand>
     <Nav className="ml-auto" navbar>
       <NavItem>
-        <NavLink tag={Link} to="/#portfolio">Portfolio</NavLink>
+        <NavLink tag={Link} to="/portfolio">Portfolio</NavLink>
       </NavItem>
       <NavItem>
         <NavLink tag={Link} to="/about/">About</NavLink>

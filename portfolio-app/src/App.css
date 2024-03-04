@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+/* Global styles */
+body, html {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+  background-color: #f8f9fa; /* A light grey background */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Navbar styles */
+.navbar {
+  background-color: #fff; /* White background */
+  box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Slight shadow for depth */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-link {
+  color: #555; /* Darker grey for the nav links */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-brand {
+  color: #007bff; /* Bootstrap primary color for the brand */
 }
 
-.App-link {
-  color: #61dafb;
+/* Footer styles */
+footer {
+  background-color: #fff; /* White background */
+  color: #555; /* Darker grey for the text */
+  padding: 20px 0; /* Some padding top and bottom */
+  text-align: center; /* Center the text */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0,0,0,.1); /* Slight shadow for depth */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer a {
+  color: #007bff; /* Bootstrap primary color for links */
+}
+
+footer .fa {
+  margin-right: 10px; /* Space out icons */
+}
+
+/* Section specific styles */
+.about-section, .portfolio-section, .say-hi-section {
+  padding: 40px 0; /* Ample padding for each section */
+}
+
+/* About page styles */
+.about-section .img-fluid {
+  max-width: 50%; /* Limiting image size */
+  border-radius: 50%; /* Circular image */
+  margin-bottom: 20px; /* Space below image */
+}
+
+/* Portfolio page styles */
+.portfolio-section .card {
+  margin-bottom: 20px; /* Space below each card */
+}
+
+.portfolio-section .badge {
+  margin-right: 5px; /* Space between technology badges */
+}
+
+/* SayHi page styles */
+.say-hi-section form {
+  background: #fff; /* White background for the form */
+  padding: 20px; /* Padding inside the form */
+  border-radius: 5px; /* Slightly rounded corners for the form */
+  box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Slight shadow for depth */
+}
+
+.say-hi-section button {
+  width: 100%; /* Full width button */
+  margin-top: 10px; /* Space above the button */
 }
